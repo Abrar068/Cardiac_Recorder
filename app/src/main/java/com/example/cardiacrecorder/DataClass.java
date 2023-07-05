@@ -45,6 +45,28 @@ public class DataClass {
     public String getCmnt() {
         return cmnt;
     }
+    public void setSystolicPressure(String systolicPressure) {
+        this.sys = systolicPressure;
+    }
+
+    public String getFormattedSys()
+    {
+        return sys+" mmHg";
+    }
+    public void setDiastolicPressure(String diastolicPressure) {
+        this.dis = diastolicPressure;
+    }
+
+    public String getFormattedDys() {
+        return dis + " mmHg";
+    }
+    public void setHeartRate(String heartRate) {
+        this.bpm= heartRate;
+    }
+    public String getFormattedHeartRate(){
+        return bpm+" bpm";
+    }
+
 
     public DataClass(String date, String time, String sys, String dis, String bpm, String cmnt, String passeduser, String id) {
         this.date = date;
