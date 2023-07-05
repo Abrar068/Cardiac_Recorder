@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".details">
+    tools:context=".details"
+    android:id = "@+id/det"
+    android:background="@drawable/img_4">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="715dp"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+
+        android:gravity="center">
 
 
         <TextView
@@ -18,9 +22,10 @@
             android:layout_height="wrap_content"
             android:text="Details Information"
             android:textAlignment="center"
-            android:textColor="#8692f7"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"/>
 
         <TextView
             android:id="@+id/dateText"

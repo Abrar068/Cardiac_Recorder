@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/main">
+    android:id="@+id/main"
+    android:background="@drawable/img_4">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
