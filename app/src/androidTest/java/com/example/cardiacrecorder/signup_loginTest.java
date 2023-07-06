@@ -28,6 +28,10 @@ public class signup_loginTest {
     public ActivityScenarioRule<signup_login> activityRule =
             new ActivityScenarioRule<>(signup_login.class);
 
+
+    /**
+     * Tests the signup or login process.
+     */
     @Test
     public void test_signup_or_login()
     {
@@ -40,6 +44,12 @@ public class signup_loginTest {
 
 
     }
+
+    /**
+     * Tests the login process.
+     *
+     * @throws InterruptedException If the thread is interrupted.
+     */
     @Test
     public void test_login() throws InterruptedException {
         onView(withId(R.id.loginButton)).perform(click());
@@ -54,6 +64,12 @@ public class signup_loginTest {
         onView(withId(R.id.main)).check(matches(isDisplayed()));
     }
 
+
+    /**
+     * Tests the add and delete functionality.
+     *
+     * @throws InterruptedException If the thread is interrupted.
+     */
     @Test
     public void test_add_delete() throws InterruptedException {
         onView(withId(R.id.loginButton)).perform(click());

@@ -5,8 +5,14 @@ import static org.junit.Assert.*;
 
 import com.example.cardiacrecorder.DataClass;
 
+/**
+ * Contains test methods for the DataClass getters, setters, and formatting methods.
+ */
 public class DataClassTest {
 
+    /**
+     * Tests the getters and setters of the DataClass.
+     */
     @Test
     public void testGettersAndSetters() {
         String date = "2023-07-05";
@@ -42,6 +48,9 @@ public class DataClassTest {
         assertEquals("80", data.getBpm());
     }
 
+    /**
+     * Tests the formatting of the systolic pressure.
+     */
     @Test
     public void testFormattedSys() {
 
@@ -54,6 +63,9 @@ public class DataClassTest {
         assertEquals("120 mmHg", data.getFormattedSys());
     }
 
+    /**
+     * Tests the formatting of the diastolic pressure.
+     */
     @Test
     public void testFormattedDys() {
 
@@ -66,6 +78,9 @@ public class DataClassTest {
         assertEquals("80 mmHg", data.getFormattedDys());
     }
 
+    /**
+     * Tests the formatting of the heart rate.
+     */
     @Test
     public void testFormattedHeartRate() {
 
